@@ -4,12 +4,13 @@
 }
 .outer {
 	background-color: #374140;
+	border-radius: 2px;
 }
 body {
 	background-color: #1E1E20;
 }
 #mainWindow {
-	height: 460px;
+	height: 100%;
 }
 p {
 	color: #DC6F00;
