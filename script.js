@@ -20,6 +20,9 @@ $(document).ready(function() {
 		game = $("#searchField").val();
 		search(game);
 		
+	});
+	$(".clearList").on("click", function(){
+		$("#returnGame").fadeOut();
 		
 	});
 	$("#returnGame").on("click", "#removeGame", function(){

@@ -14,7 +14,7 @@ body {
 p {
 	color: #DC6F00;
 }
-.searchBtn {
+.btn, .btn-sm {
 	color: #008ED9;
 }
 img {
