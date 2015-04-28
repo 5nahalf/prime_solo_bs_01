@@ -9,7 +9,8 @@ function searchCallback(results) {
     for(i = 0; i <= 8; i++){
     	var picture = results[i].image.medium_url;
     	var deck = results[i].deck;
-    	$("#returnGame").append("<div class='container well col-md-4' id='mainWindow'><div class='hidden-sm hidden-xs' id='gameImage'><img src='" + picture + "'/></div><div class='well outer text-center' id='gameTitle'><p class='lead'>" + results[i].name + "</p></div><p id='textHidden'>" + results[i].deck + "</p><button class='btn-sm btn-success' id='removeGame'>Remove Game</button></div>");
+    	var game = results[i].site_detail_url;
+    	$("#returnGame").append("<div class='container well col-md-4' id='mainWindow'><div class='hidden-sm hidden-xs' id='gameImage'><img src='" + picture + "'/></div><div class='well outer text-center' id='gameTitle'><p class='lead'>" + results[i].name + "</p></div><p id='textHidden'>" + results[i].deck + "<br><a href='" + game + "' target='_blank'>Take me there</a></p><button class='btn-sm btn-success' id='removeGame'>Remove Game</button></div>").hide().fadeIn(500);
 	}
 }
 
@@ -22,8 +23,10 @@ $(document).ready(function() {
 		
 	});
 	$("#returnGame").on("click", "#removeGame", function(){
-		$(this).parent().remove();
+		$(this).parent().fadeOut();
 	});
+	
+
 
 	// Start the search here!
 	
