@@ -1,0 +1,34 @@
+.well {
+	background-color: #2A2C2B;
+}
+.outer {
+	background-color: #374140;
+}
+body {
+	background-color: #1E1E20;
+
+}
+#mainWindow {
+	height: 460px;
+}
+p {
+	color: #DC6F00;
+}
+.searchBtn {
+	color: #008ED9;
+}
+
+img {
+	height: 200px;
+	width: 200px;
+}
+
+#searchBox {
+	font-weight: bold;
+	display: inline-block;
+}
+
+#textHidden {
+	height: 50px;
+	overflow: auto;
+}
